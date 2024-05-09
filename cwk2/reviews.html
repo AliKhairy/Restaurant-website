@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camel's Restaurant giftcards</title>
+    <title>Camel's Restaurant reviews</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,39 +50,42 @@
     <div class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>CAMEL'S GIFT CARDS</h1>
-                <h2>Give the gift of Egyptian cuisine</h2>
-                <p>Purchase a gift card for your loved ones.</p>
+                <h1>CAMEL'S REVIEWS</h1>
+                <h2>What our customers say</h2>
+                <p>Read reviews from our satisfied customers.</p>
+                <a href="form.html" class="button">Leave a Review</a>
             </div>
             
-        </div>
-    </div>
-
-    <div class="giftcard">
-        <h1>Gift Card Options</h1>
-        <div class="giftcard__container">
-            <div class="giftcard__card">
-                <h2 class="product-title">£10 Gift Card</h2>
-                <p>Perfect for a small treat</p>
-                <button class="add-cart">Add to cart</button>
-            </div>
-            <div class="giftcard__card">
-                <h2 product-title>£20 Gift Card</h2>
-                <p>Great for a meal out</p>
-                <button class="add-cart">Add to cart</button>
+            <div class="main__img--container">
+                <img src="images/reviews.jpg" alt="Reviews Image" id="main__img">
             </div>
         </div>
     </div>
 
+    <div class="reviews">
+        <h1>Customer Reviews</h1>
+        <div class="reviews__container">
+            <div class="reviews__card">
+                <h2>Ahmed</h2>
+                <p><em>"Camel's Restaurant is a hidden gem! Their Egyptian dishes are bursting with authentic flavors. A must-try for anyone craving a taste of Egypt."</em></p>
+            </div>
+            <div class="reviews__card">
+                <h2>Mohammed</h2>
+                <p><em>"I stumbled upon Camel's Restaurant while exploring the neighborhood and I'm so glad I did! The Egyptian dishes are delicious and the atmosphere is cozy."</em></p>
+            </div>
+        </div>
+    </div>
 
-   <!-- footer -->
-   <div class="footer__container">
+
+<!-- footer -->
+<div class="footer__container">
     <div class="footer__links">
         <div class="footer__link--wraper d-flex justify-content-center">
             <div class="footer__link--items me-5">
                 <h2>About Us</h2>
                 <a href="howitworks.html">Our Mission</a>
                 <a href="tos.html">Terms of Services</a>
+                <a href="location.html">Our location</a>
             </div>
             <div class="footer__link--items">
                 <h2>Contact Us</h2>
@@ -94,6 +97,7 @@
         </div>
     </div>
 </div>
+    <script src="storage.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camel's products Menu</title>
+    <title>Location - Camel's Deserty</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4v2PNh2AVgRH50NTUicNqXP7g74pRzLI"></script>
 
 </head>
 <body>
@@ -46,69 +46,26 @@
         </div>
     </nav>
 
-
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>CAMEL'S PRODUCTS</h1>
-                <h2>Explore our products</h2>
-                <p>Discover our range of Egyptian delights.</p>
-            </div>
-            <div class="main__img--container">
-                <img src="images/spices.jpg" alt="Products Image" id="main__img">
-            </div>
-        </div>
-    </div>
-
-    <div class="text-box">
-        <p id="see-below"><strong>See below</strong></p>
-    </div>
-
-    <div class="container my-5" id="products-section">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mb-4">Products</h1>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="products__card">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/turmeric.jpg" class="card-img-top product-img" alt="turmeric">
-                    <div class="card-body">
-                        <h5 class="card-title product-title" >Tuermeric seasoning</h5>
-                        <p class="card-text">Fresh grinded turmeric from Egypt at a cheap price!</p>
-                        
-                        <p class="card-text"><span class="price">£1</span></p>
-                        <button class="add-cart">Add to cart</button>
+    
+    <div class="location">
+        <div class="location__container">
+            <h1>Our Location</h1>
+            <div class="map-container">
+                <div id="map" style="height: 500px; width: 100%;"></div>
+                <div class="map-key">
+                    <h3>Map Key</h3>
+                    <div class="key-item">
+                        <span class="key-icon"><i class="fa fa-map-marker fa-lg" aria-hidden="true" ></i></span>
+                        <span class="key-label">Camel's Deserty</span>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/grape.jpg" class="card-img-top product-img" alt="grape_leaves">
-                    <div class="card-body">
-                        <h5 class="card-title product-title">Grape Leaves</h5>
-                        <p class="card-text">Dried grape leaves to make stuffed grapped leaves at home. (500g)</p>
-                        
-                        <p class="card-text"><span class="price">£3</span></p>
-                        <button class="add-cart">Add to cart</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/sobia.jpg" class="card-img-top product-img" alt="sobia_powder">
-                    <div class="card-body">
-                        <h5 class="card-title product-title">Sobia Powder</h5>
-                        <p class="card-text">A powder produced from Rice, coconut powder and dairy products. Mix it with milk and sugar and you get a nice drink.</p>
-                        <p class="card-text"><span class="price">£2</span></p>
-                        <button class="add-cart">Add to cart</button>
+                    <div class="key-item">
+                        <span class="key-icon user-icon"></span>
+                        <span class="key-label">Your Location</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- footer -->
     <div class="footer__container">
@@ -118,6 +75,7 @@
                     <h2>About Us</h2>
                     <a href="howitworks.html">Our Mission</a>
                     <a href="tos.html">Terms of Services</a>
+                    <a href="location.html">Our location</a>
                 </div>
                 <div class="footer__link--items">
                     <h2>Contact Us</h2>
@@ -129,6 +87,8 @@
             </div>
         </div>
     </div>
+    <script src="location.js"></script>
+    <script src="storage.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

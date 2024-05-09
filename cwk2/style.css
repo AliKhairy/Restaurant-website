@@ -636,10 +636,25 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.booking__container_form {
+    max-width: 600px;
+    width: 60%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .booking__content h1 {
     font-size: 2.5rem;
     color: #965A38;
     text-align: center;
+    margin-bottom: 2rem;
+}
+.booking__content h1.h1_form {
+    font-size: 2.5rem;
+    color: #965A38;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
@@ -671,111 +686,6 @@ html {
     border-color: #8B4513;
 }
 
-/* giftcard */
-
-.giftcard {
-    background-color: #BF9E7A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.giftcard h1 {
-    background-color: #D8B384;
-    background-image: linear-gradient(to right, #D8B384 0%, #F5DEB3 21%, #FFCB9A 52% #D2B48C 78%, #C08552 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.giftcard__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.giftcard__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(191, 158, 122, 0.6) 100%), url('/images/giftcard10.jpg');
-    background-size: cover;
-    position: relative;
-    color: #FFFFFF;
-}
-
-.giftcard__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(191, 158, 122, 0.6) 100%), url('/images/giftcard20.jpg');
-
-}
-
-.giftcard__card h2 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.giftcard__card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.giftcard__card button {
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #C08552;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.giftcard__card button:hover {
-    background: #8B4513;
-}
-
-.giftcard__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 960px) {
-    .giftcard {
-        height: 1600px;
-    }
-    .giftcard h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .giftcard {
-        height: 1400px;
-    }
-    .giftcard h1 {
-        font-size: 1.2rem;
-    }
-    .giftcard__card {
-        width: 300px;
-    }
-}
 
 
 /* reviews */
@@ -925,95 +835,163 @@ html {
     margin-left: 4px;
 }
 
-.cart {
-    background: var(--bg-color);
-    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
-    transition: 0.3s;
+/* ... (existing CSS styles) */
+
+/* Cart Container */
+.cart-container {
+    background-color: #BF9E7A;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
 }
 
-.cart.active {
-    right: 0;
-}
-
-.cart-box {
-    display: grid;
-    grid-template-columns: 32% 50% 18%;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.cart-img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    padding: 10px;
-}
-
-.detail-box {
-    display: grid;
-    row-gap: 0.5rem;
-}
-.cart-product-title {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-
-.cart-price {
-    font-weight: 500;
-}
-
-.cart-quantity {
-    border: 1px solid var(--text-color);
-    outline-color: var(--main-color);
-    width: 2.4rem;
+.cart-title {
+    font-size: 2rem;
+    color: #965A38;
     text-align: center;
-    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
-#cart-remove {
-    font-size: 24px;
-    color: var(--main-color);
+.cart-items {
+    margin-bottom: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item span {
+    color: #555555;
+}
+
+.cart-item .change-quantity {
+    background-color: #C08552;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.25rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-item .change-quantity:hover {
+    background-color: #8B4513;
+}
+
+.cart-item .remove-from-cart {
+    background-color: #965A38;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-item .remove-from-cart:hover {
+    background-color: #8B4513;
 }
 
 .total {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--text-color);
-}
-
-.total-title {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.total-price {
-    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    color: #965A38;
+    text-align: right;
+    margin-bottom: 1rem;
 }
 
 .btn-buy {
-    display: flex;
-    margin: 1.5rem auto 0 auto;
-    padding: 12px 20px;
+    background-color: #C08552;
+    color: #fff;
     border: none;
-    background: var(--main-color);
-    color: var(--bg-color);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
-    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 .btn-buy:hover {
-    background: var(--text-color);
+    background-color: #8B4513;
 }
 
-#close-cart {
-    position: absolute;
-    top: 1rem;
-    right: 0.8rem;
-    font-size: 2rem;
-    color: var(--text-color);
-    cursor: pointer;
+
+.location {
+    background-color: #BF9E7A;
+    padding: 4rem 0;
 }
+
+.location__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    text-align: center;
+}
+
+.location__container h1 {
+    font-size: 3rem;
+    background-color: #D8B384;
+    background-image: linear-gradient(to top, #C08552 0%, #F5DEB3 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
+}
+
+.fa fa-map-marker {
+    color: red;
+  }
+
+  .map-container {
+    position: relative;
+}
+
+.map-key {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.key-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.key-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.user-icon {
+    background-color: #0000FF;
+    border-radius: 50%;
+}
+
+.fa {
+    color: red;
+    size: 200px;
+}
+
