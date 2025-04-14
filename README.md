@@ -19,3 +19,13 @@ A website I made for a coursework, requiring HTML/CSS(bootstrap) and Js.
 The website is responsive for all devices as I have tested it with multiple
 resolutions by resizing the window on PC. When its about phone-size it provides
 a drop-down menu. 
+
+# How to run
+Make sure you have the Live Server extenstion installed on your github codespaces. To do that:
+- Click Ctrl+Shift+X 
+- Search Live Server
+- Install it
+
+Once you're done with that, right click on the menu.html file and click open with live server.
+
+You are now able to browse my website.
