@@ -21,6 +21,8 @@ resolutions by resizing the window on PC. When its about phone-size it provides
 a drop-down menu. 
 
 # How to run
+Create a codespace by clicking the green button that says code. Then click codespaces, and create a codespace from there.
+
 Make sure you have the Live Server extenstion installed on your github codespaces. To do that:
 - Click Ctrl+Shift+X 
 - Search Live Server
